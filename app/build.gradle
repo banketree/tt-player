@@ -41,6 +41,6 @@ dependencies {
     implementation dependence['appcompat']
     implementation dependence['core-ktx']
     implementation dependence['constraintlayout']
-    implementation project(path: ':ijkplayer')
+    api project(path: ':tt-video')
 
 }

@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.banketree.ttplayer.widget.videoplayer.IjkVideoView
+    <com.ttm.video.player.IjkVideoView
         android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -25,14 +25,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.dueeeke.videoplayer.player.VideoView
-        android:id="@+id/video_view_2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:layout_constraintDimensionRatio="16:9"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/video_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

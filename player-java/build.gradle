@@ -41,5 +41,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation dependence['annotation']
+    api dependence['annotation']
 }
