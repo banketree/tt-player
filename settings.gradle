@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':player-java', ':ijkplayer'
 rootProject.name='tt-player'
