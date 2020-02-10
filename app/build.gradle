@@ -41,6 +41,10 @@ dependencies {
     implementation dependence['appcompat']
     implementation dependence['core-ktx']
     implementation dependence['constraintlayout']
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
     api project(path: ':tt-video')
 
 }

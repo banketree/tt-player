@@ -24,7 +24,7 @@ import com.dueeeke.videoplayer.player.VideoViewManager;
 public class PrepareView extends FrameLayout implements IControlComponent {
 
     private ControlWrapper mControlWrapper;
-    
+
     private ImageView mThumb;
     private ImageView mStartPlay;
     private ProgressBar mLoading;
@@ -41,7 +41,7 @@ public class PrepareView extends FrameLayout implements IControlComponent {
     public PrepareView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
-    
+
     {
         LayoutInflater.from(getContext()).inflate(R.layout.dkplayer_layout_prepare_view, this, true);
         mThumb = findViewById(R.id.thumb);
@@ -132,5 +132,9 @@ public class PrepareView extends FrameLayout implements IControlComponent {
     @Override
     public void onLockStateChanged(boolean isLocked) {
 
+    }
+
+    public ImageView getPreviewImageView() {
+        return mThumb;
     }
 }
