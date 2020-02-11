@@ -35,7 +35,6 @@ import com.dueeeke.videoplayer.util.PlayerUtils;
 public class StandardVideoController extends GestureVideoController implements View.OnClickListener {
 
     protected ImageView mLockButton;
-    protected ImageView mPreviewImageView;
 
     protected ProgressBar mLoadingProgress;
 
@@ -75,7 +74,6 @@ public class StandardVideoController extends GestureVideoController implements V
         ErrorView errorView = new ErrorView(getContext());
         PrepareView prepareView = new PrepareView(getContext());
         prepareView.setClickStart();
-        mPreviewImageView = prepareView.getPreviewImageView();
         TitleView titleView = new TitleView(getContext());
         titleView.setTitle(title);
         addControlComponent(completeView, errorView, prepareView, titleView);
@@ -86,10 +84,6 @@ public class StandardVideoController extends GestureVideoController implements V
         }
         addControlComponent(new GestureView(getContext()));
         setCanChangePosition(!isLive);
-    }
-
-    public ImageView getPreviewImage() {
-        return mPreviewImageView;
     }
 
     @Override

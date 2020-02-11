@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         video_view.setVideoController(controller2)
 //        video_view.start()
 //
-        Glide.with(this)
-            .load("file:///android_asset/img6.jpg")
-            .placeholder(android.R.color.darker_gray)
-            .into(controller2.previewImage)
+//        Glide.with(this)
+//            .load("file:///android_asset/img6.jpg")
+//            .placeholder(android.R.color.darker_gray)
+//            .into(controller2.previewImage)
     }
 
 }

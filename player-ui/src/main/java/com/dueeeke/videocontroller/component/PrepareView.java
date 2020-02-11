@@ -52,7 +52,7 @@ public class PrepareView extends FrameLayout implements IControlComponent {
             @Override
             public void onClick(View v) {
                 mNetWarning.setVisibility(GONE);
-                VideoViewManager.instance().setPlayOnMobileNetwork(true);
+//                VideoViewManager.instance().setPlayOnMobileNetwork(true);
                 mControlWrapper.start();
             }
         });
@@ -134,7 +134,7 @@ public class PrepareView extends FrameLayout implements IControlComponent {
 
     }
 
-    public ImageView getPreviewImageView() {
+    public ImageView getThumbImageView() {
         return mThumb;
     }
 }
