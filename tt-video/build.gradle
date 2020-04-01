@@ -44,4 +44,5 @@ dependencies {
     implementation dependence['appcompat']
     api project(path: ':ijkplayer')
     api project(path: ':video-player-ui')
+    api project(path: ':video-cache')
 }

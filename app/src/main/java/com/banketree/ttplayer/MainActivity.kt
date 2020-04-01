@@ -2,6 +2,7 @@ package com.banketree.ttplayer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.banketree.ttplayer.cache.ProxyVideoCacheManager
 import com.bumptech.glide.Glide
 import com.dueeeke.videocontroller.StandardVideoController
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        video_view.setUrl(URL_AD)
+        video_view.setUrl(ProxyVideoCacheManager.getProxy(this).getProxyUrl(URL_AD))
         //必须设置
         video_view.setEnableAudioFocus(false)
         val controller2 = StandardVideoController(this)

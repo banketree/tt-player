@@ -440,6 +440,20 @@ public class VideoView<P extends AbstractPlayer> extends FrameLayout
     }
 
     /**
+     * 播放完成状态
+     */
+    private boolean isInCompletedState() {
+        return mCurrentPlayState == STATE_PLAYBACK_COMPLETED;
+    }
+
+    /**
+     * 播放暂停状态
+     */
+    private boolean isInPausedState() {
+        return mCurrentPlayState == STATE_PAUSED;
+    }
+
+    /**
      * 重新播放
      *
      * @param resetPosition 是否从头开始播放
