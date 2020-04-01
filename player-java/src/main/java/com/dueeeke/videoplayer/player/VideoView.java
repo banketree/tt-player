@@ -416,7 +416,7 @@ public class VideoView<P extends AbstractPlayer> extends FrameLayout
     /**
      * 是否处于播放状态
      */
-    protected boolean isInPlaybackState() {
+    public boolean isInPlaybackState() {
         return mMediaPlayer != null
                 && mCurrentPlayState != STATE_ERROR
                 && mCurrentPlayState != STATE_IDLE
@@ -428,28 +428,28 @@ public class VideoView<P extends AbstractPlayer> extends FrameLayout
     /**
      * 是否处于未播放状态
      */
-    protected boolean isInIdleState() {
+    public boolean isInIdleState() {
         return mCurrentPlayState == STATE_IDLE;
     }
 
     /**
      * 播放中止状态
      */
-    private boolean isInStartAbortState() {
+    public boolean isInStartAbortState() {
         return mCurrentPlayState == STATE_START_ABORT;
     }
 
     /**
      * 播放完成状态
      */
-    private boolean isInCompletedState() {
+    public boolean isInCompletedState() {
         return mCurrentPlayState == STATE_PLAYBACK_COMPLETED;
     }
 
     /**
      * 播放暂停状态
      */
-    private boolean isInPausedState() {
+    public boolean isInPausedState() {
         return mCurrentPlayState == STATE_PAUSED;
     }
 
