@@ -40,7 +40,7 @@ public class VodControlView extends FrameLayout implements IControlComponent, Vi
     private LinearLayout mBottomContainer;
     private SeekBar mVideoProgress;
     private ProgressBar mBottomProgress;
-    private ImageView mPlayButton;
+    ImageView mPlayButton;
 
     private boolean mIsDragging;
 

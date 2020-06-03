@@ -26,7 +26,7 @@ public class PrepareView extends FrameLayout implements IControlComponent {
     private ControlWrapper mControlWrapper;
 
     private ImageView mThumb;
-    private ImageView mStartPlay;
+    ImageView mStartPlay;
     private ProgressBar mLoading;
     private FrameLayout mNetWarning;
 
