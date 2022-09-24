@@ -41,6 +41,6 @@ ext {
             "viewpager2"                : "androidx.viewpager2:viewpager2:1.0.0-alpha01",
 
             //player
-            "ijkplayer-java"            : "tv.danmaku.ijk.media:ijkplayer-java:0.8.8",
+            "ijkplayer-java"            : "tv.danmaku.ijk.media:ijkplayer-java:k0.8.8",
     ]
 }
